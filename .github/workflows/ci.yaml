@@ -58,7 +58,7 @@ jobs:
           key: ${{ runner.os }}-docker
 
       - name: Build Docker image
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: .
           push: false
@@ -94,7 +94,7 @@ jobs:
           key: ${{ runner.os }}-docker
 
       - name: Build Docker image
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: .
           push: false
@@ -221,7 +221,7 @@ jobs:
           key: ${{ runner.os }}-docker
 
       - name: Build and push Docker image
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: .
           push: true
@@ -299,7 +299,7 @@ jobs:
           key: ${{ runner.os }}-docker
 
       - name: Build and push Docker image
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         continue-on-error: true
         with:
           context: .
